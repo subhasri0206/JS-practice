@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Calibri';
+}
+
+/* Style the header of the webpage */
+.webpage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the card elements */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Style for individual card elements */
+.card {
+    position: relative;
+    flex: 1 1 32%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Style for the "View Details" button */
+.projects-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #F58448;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.projects-button:hover {
+    background-color: #fa681a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
