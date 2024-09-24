@@ -1,0 +1,139 @@
+body {
+    font-family: Trebuchet MS;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.input-section input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.input-section button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #0056b3;
+}
+
+.list-section {
+    margin-bottom: 20px;
+}
+
+#shoppingList {
+    list-style: none;
+    padding: 0;
+}
+
+#shoppingList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+#shoppingList li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#shoppingList li button {
+    background-color: #A87676;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#shoppingList li button:hover {
+    background-color: #CA8787;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #999;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+#totalPrice {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.sort-section {
+    text-align: center;
+}
+
+.sort-section button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.sort-section button:hover {
+    background-color: #0056b3;
+}

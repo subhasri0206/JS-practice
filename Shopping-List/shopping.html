@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Shopping List</h1>
+
+        <div class="input-section">
+            <input type="text" id="itemName" placeholder="Item name" required>
+            <input type="number" id="itemPrice" placeholder="Item price" required>
+            <button onclick="addItem()">Add</button>
+        </div>
+
+        <div class="list-section">
+            <h2>Your Items</h2>
+            <ul id="shoppingList"></ul>
+            <p id="emptyMessage">Your shopping list is empty.</p>
+        </div>
+
+        <h3>Total Price: ₹<span id="totalPrice">0.00</span></h3>
+
+        <div class="sort-section">
+            <button onclick="sortByNameAsc()">Sort A-Z</button>
+            <button onclick="sortByNameDesc()">Sort Z-A</button>
+            <button onclick="sortByPriceAsc()">Sort Low to High</button>
+            <button onclick="sortByPriceDesc()">Sort High to Low</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
