@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="signup-page" class="form-container">
+        <h2>Signup - Step 1</h2>
+        <form id="name-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <div id="age-username-page" class="form-container" style="display: none;">
+        <h2>Signup - Step 2</h2>
+        <form id="age-username-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <div id="password-page" class="form-container" style="display: none;">
+        <h2>Signup - Step 3</h2>
+        <form id="password-form">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+                required>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <div id="login-page" class="form-container" style="display: none;">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="login-username" placeholder="Enter your username" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Enter your password" disabled>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
